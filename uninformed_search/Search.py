@@ -1,5 +1,5 @@
-from Node import *
-from utils import *
+from uninformed_search.Node import *
+from uninformed_search.utils import *
 
 def breadth_first_search(problem):
     "[Figure 3.11]"

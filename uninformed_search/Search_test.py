@@ -1,6 +1,6 @@
-from Search import *
-from Graph import *
-from Problem import *
+from uninformed_search.Search import *
+from uninformed_search.Graph import *
+from uninformed_search.Problem import *
 
 romania_problem = GraphProblem('Arad', 'Bucharest', romania_map)
 

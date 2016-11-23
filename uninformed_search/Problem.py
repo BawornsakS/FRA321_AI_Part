@@ -1,5 +1,6 @@
-from utils import *
-from grid import distance
+from uninformed_search.utils import *
+from uninformed_search.grid import distance
+
 infinity = float('inf')
 
 class Problem(object):

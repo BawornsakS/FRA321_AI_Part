@@ -4,7 +4,7 @@
 # __________________________________________________________________________
 import math
 
-from utils import clip
+from uninformed_search.utils import clip
 
 orientations = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 
