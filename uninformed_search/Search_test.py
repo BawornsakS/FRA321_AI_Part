@@ -10,9 +10,9 @@ b = Node("B")
 graphA = Graph()
 graphA.edges = {
     'A': ['B'],
-    'B': ['A', 'C', 'D'],
+    'B': ['C', 'D'],
     'C': ['A'],
-    'D': ['E', 'A'],
+    'D': ['E'],
     'E': ['B']
 }
 
