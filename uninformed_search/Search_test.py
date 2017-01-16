@@ -23,9 +23,9 @@ g.walls = DIAGRAM1_WALLS # long list, [(21, 0), (21, 2), ...]
 #draw_grid(g)
 
 #test cases for graph A
-#s = Search.breadth_first_search(graphA,'A','E')
+s = Search.breadth_first_search(graphA,'A','E')
 #d = Search.depth_first_search(graphA, 'A', 'E')
-#Search.print_path(s,'A','E')
+Search.print_path(s,'A','E')
 #Search.print_path(d,'A','E')
 
 
