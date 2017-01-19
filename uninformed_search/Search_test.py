@@ -13,7 +13,7 @@ graphA = Graph()
 graphA.edges = {
     'A': ['B'],
     'B': ['C', 'D'],
-    'C': ['A'],
+    'C': ['D'],
     'D': ['E'],
     'E': ['B']
 }
