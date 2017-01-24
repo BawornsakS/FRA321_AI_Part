@@ -38,3 +38,5 @@ diagram.weights = {loc: 5 for loc in [(3, 4), (3, 5), (4, 1), (4, 2),
                                        (5, 7), (5, 8), (6, 2), (6, 3),
                                        (6, 4), (6, 5), (6, 6), (6, 7),
                                        (7, 3), (7, 4), (7, 5)]}
+#weights2 = {loc: 6 for loc in [(1, 2), (1, 3)]}    You can add different weights
+#diagram.weights.update(weights2)

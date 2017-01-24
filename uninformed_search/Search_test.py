@@ -36,6 +36,5 @@ Search.print_path(s,'A','E')
 #draw_grid(g)
 
 ### A* Algorithm
-#cost_so_far = Search.a_star_search(diagram, (1, 4), (7, 8))
+#cost_so_far = Search.a_star_search(diagram, (1, 4), (7, 8))            #check what "diagram" is in SquareGrid
 #draw_grid(diagram, width=3, number=cost_so_far, start=(1, 4), goal=(7, 8))
-
