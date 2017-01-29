@@ -18,7 +18,7 @@ l2 = [(0,0),(0,1),(1,2)]
 
 #Add to a list - You can add the same element into a list
 l.append(4)
-l.append(4000)
+l.append(40000)
 l.append(4)
 #print(l)
 
