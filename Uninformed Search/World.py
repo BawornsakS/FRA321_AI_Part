@@ -1,7 +1,5 @@
 import pygame
-import math
-
-
+import random
 
 class World:
     agent_list = {}
@@ -17,18 +15,16 @@ class World:
         self.cell_size = cell_size
 
 
-    def add(self, agent):
-        x = agent.pos_x
-        y = agent.pos_y
+    def draw_rec(self, screen, pos, color = pygame.Color(0,255,0)):
+        #print("[" + str(pos[0]) + "," + str(pos[1]) + "]")
+        pygame.draw.rect(screen,color, (pos[0]*self.cell_size +1, pos[1]*self.cell_size +1, self.cell_size -1, self.cell_size -1))
+        pygame.display.flip()
 
-        self.agent_list[agent.name] = [x,y]
-
-    def draw_agent(self, screen, color = pygame.Color(0,255,0)):
-        i = 0
-        for a,p in self.agent_list.items():
-            print("Agent " + str(a) , end = "   ")
-            print("[" + str(p[0]) + "," + str(p[1]) + "]")
-            pygame.draw.rect(screen,color, (p[0]*self.cell_size +1, p[1]*self.cell_size +1, self.cell_size -1, self.cell_size -1))
-            pygame.display.flip()
-
-
+    def random_wall(self, num):
+        walls = []
+        for i in range(int(num/100 * (self.width*self.height))):
+            x = int(random.random()*self.width)
+            y = int(random.random()*self.height)
+            if x != 0 and y != 0:
+                walls.append((x,y))
+        return walls

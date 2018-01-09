@@ -1,25 +1,14 @@
-from World import World
 from Agent import Agent
+from World import World
 import pygame
 import math
-#---------------------------------- Philosophy --------------------------------------------
-'''
-The supreme cost function: as a race, survive as long as possible
 
-
-
-Actions available: eat, breed, (more to come)
---- each action impacts life span
---- hidden actions: Agents don't know the action until it performs by itself
-
-
-'''
 #---------------------------------- Set up screen -----------------------------------------
 
 print ("Setting up screen")
 width = 400
 height = 400
-cell_size = 10
+cell_size = 40
 screen = pygame.display.set_mode((width, height))
 screen.fill((255, 255, 255))
 
@@ -37,18 +26,74 @@ for i in range(1, math.floor(height / cell_size) + 1):
 #---------------------------------- Set up World ------------------------------------------
 print ("Conjuring the Matrix")
 
+end = (5, 5)
+
 w = World(width, height,cell_size)
-a = Agent("Blink",w,3,3)
+#wall_pos = [(0,5),(1,5),(2,5),(3,5),(4,5),(6,7)]
+wall_pos = w.random_wall(40)
+wall_pos.append(end)
+
+if end in wall_pos:
+    wall_pos.remove(end)
+
 
 #---------------------------------- Simulation --------------------------------------------
 
 print ("Activating the Matrix")
-while running:
+
+
+#---------------------------------- Setting Up the World ----------------------------------
+
+
+agent = Agent(w, 0, 0)
+neighbors = agent.neighbor()
+visited = [(0,0)]
+current = (agent.pos_x,agent.pos_y)
+
+
+#---------------------------------- Drawing Walls------------------------------------------
+
+for wall in wall_pos:
+    w.draw_rec(screen, wall, pygame.Color(0, 0, 0))
+w.draw_rec(screen, end, pygame.Color(0, 255, 0))
+
+#---------------------------------- Searching ---------------------------------------------
+
+
+for n in agent.neighbor():
+    if n not in visited and n not in neighbors and n not in wall_pos:
+        neighbors.append(n)
+
+while len(neighbors) != 0:
+
+    ################################## Pygame Stuff #######################################
     event = pygame.event.poll()
     if event.type == pygame.QUIT:
         running = 0
+    w.draw_rec(screen, (agent.pos_x, agent.pos_y), pygame.Color(255, 0, 0))
+    w.draw_rec(screen, current, pygame.Color(100, 100, 100))
+    #######################################################################################
 
-    w.draw_agent(screen,pygame.Color(255,255,255))
-    a.walk(w)
-    w.draw_agent(screen)
-    pygame.time.delay(50)
+    current = neighbors.pop(0)
+    visited.append(current)
+    agent.walk(current)
+
+    ################################## Pygame Stuff #######################################
+    w.draw_rec(screen, current, pygame.Color(0, 255, 255))
+    pygame.display.flip()
+    #######################################################################################
+
+    if current == end:
+        break
+
+    for n in agent.neighbor():
+        if n not in visited and n not in neighbors and n not in wall_pos:
+            neighbors.append(n)
+            if n != end:
+                w.draw_rec(screen, n, pygame.Color(175, 175, 175))
+            else:
+                w.draw_rec(screen, n, pygame.Color(0, 175, 0))
+
+    pygame.time.delay(10)
+
+pygame.time.delay(100000)
