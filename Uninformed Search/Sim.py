@@ -8,7 +8,7 @@ import math
 print ("Setting up screen")
 width = 400
 height = 400
-cell_size = 40
+cell_size = 40                                                  #Change this to change grid size
 screen = pygame.display.set_mode((width, height))
 screen.fill((255, 255, 255))
 
@@ -89,10 +89,13 @@ while len(neighbors) != 0:
     for n in agent.neighbor():
         if n not in visited and n not in neighbors and n not in wall_pos:
             neighbors.append(n)
+
+            ################################## Pygame Stuff ###############################
             if n != end:
                 w.draw_rec(screen, n, pygame.Color(175, 175, 175))
             else:
                 w.draw_rec(screen, n, pygame.Color(0, 175, 0))
+            ###############################################################################
 
     pygame.time.delay(10)
 
