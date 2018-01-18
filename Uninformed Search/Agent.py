@@ -1,5 +1,3 @@
-import random
-
 class Agent:
 
     pos_x = 0

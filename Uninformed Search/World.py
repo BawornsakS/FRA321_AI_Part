@@ -16,7 +16,6 @@ class World:
 
 
     def draw_rec(self, screen, pos, color = pygame.Color(0,255,0)):
-        #print("[" + str(pos[0]) + "," + str(pos[1]) + "]")
         pygame.draw.rect(screen,color, (pos[0]*self.cell_size +1, pos[1]*self.cell_size +1, self.cell_size -1, self.cell_size -1))
         pygame.display.flip()
 
