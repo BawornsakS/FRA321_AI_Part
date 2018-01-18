@@ -26,11 +26,11 @@ for i in range(1, math.floor(height / cell_size) + 1):
 #---------------------------------- Set up World ------------------------------------------
 print ("Conjuring the Matrix")
 
-end = (5, 5)
+end = (5, 5)                                                        # Goal State
 
 w = World(width, height,cell_size)
 #wall_pos = [(0,5),(1,5),(2,5),(3,5),(4,5),(6,7)]
-wall_pos = w.random_wall(40)
+wall_pos = w.random_wall(40)                                        # Percentage of Walls in Grid
 wall_pos.append(end)
 
 if end in wall_pos:
@@ -45,7 +45,7 @@ print ("Activating the Matrix")
 #---------------------------------- Setting Up the World ----------------------------------
 
 
-agent = Agent(w, 0, 0)
+agent = Agent(w, 0, 0)                                              # State State
 neighbors = agent.neighbor()
 visited = [(0,0)]
 current = (agent.pos_x,agent.pos_y)
