@@ -31,7 +31,6 @@ end = (5, 5)                                                        # Goal State
 w = World(width, height,cell_size)
 #wall_pos = [(0,5),(1,5),(2,5),(3,5),(4,5),(6,7)]
 wall_pos = w.random_wall(40)                                        # Percentage of Walls in Grid
-wall_pos.append(end)
 
 if end in wall_pos:
     wall_pos.remove(end)
@@ -59,7 +58,7 @@ w.draw_rec(screen, end, pygame.Color(0, 255, 0))
 
 #---------------------------------- Searching ---------------------------------------------
 
-
+print(wall_pos)
 for n in agent.neighbor():
     if n not in visited and n not in neighbors and n not in wall_pos:
         neighbors.append(n)
@@ -97,6 +96,6 @@ while len(neighbors) != 0:
                 w.draw_rec(screen, n, pygame.Color(0, 175, 0))
             ###############################################################################
 
-    pygame.time.delay(10)
+    pygame.time.delay(200)
 
-pygame.time.delay(100000)
+pygame.time.delay(5000)                                 #Delay after completion
