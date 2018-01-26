@@ -98,4 +98,15 @@ while len(neighbors) != 0:
 
     pygame.time.delay(200)
 
-pygame.time.delay(5000)                                 #Delay after completion
+# pygame.time.delay(5000)                                 #Delay after completion
+# pygame.time.delay(100000)
+
+############################# My Pygame Stuff #################################
+try:
+	while True:
+		event = pygame.event.poll()
+		if event.type==pygame.QUIT or pygame.key.get_pressed()[pygame.K_ESCAPE]:
+			pygame.quit()
+			break
+finally:
+	pygame.quit()
