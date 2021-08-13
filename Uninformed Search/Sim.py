@@ -63,39 +63,48 @@ for n in agent.neighbor():
     if n not in visited and n not in neighbors and n not in wall_pos:
         neighbors.append(n)
 
-while len(neighbors) != 0:
+
+
+while(1):
 
     ################################## Pygame Stuff #######################################
     event = pygame.event.poll()
     if event.type == pygame.QUIT:
-        running = 0
+        pygame.quit()
+        exit()
+
     w.draw_rec(screen, (agent.pos_x, agent.pos_y), pygame.Color(255, 0, 0))
     w.draw_rec(screen, current, pygame.Color(100, 100, 100))
+
     #######################################################################################
 
-    current = neighbors.pop(0)
-    visited.append(current)
-    agent.walk(current)
+    ################################## Algorithm ##########################################
 
-    ################################## Pygame Stuff #######################################
-    w.draw_rec(screen, current, pygame.Color(0, 255, 255))
-    pygame.display.flip()
-    #######################################################################################
+    if len(neighbors) != 0:
 
-    if current == end:
-        break
+        current = neighbors.pop(0)
+        visited.append(current)
+        agent.walk(current)
 
-    for n in agent.neighbor():
-        if n not in visited and n not in neighbors and n not in wall_pos:
-            neighbors.append(n)
+        ################################## Pygame Stuff #######################################
+        w.draw_rec(screen, current, pygame.Color(0, 255, 255))
+        pygame.display.flip()
+        #######################################################################################
 
-            ################################## Pygame Stuff ###############################
-            if n != end:
-                w.draw_rec(screen, n, pygame.Color(175, 175, 175))
-            else:
-                w.draw_rec(screen, n, pygame.Color(0, 175, 0))
-            ###############################################################################
+        if current == end:
+            break
 
-    pygame.time.delay(200)
+        for n in agent.neighbor():
+            if n not in visited and n not in neighbors and n not in wall_pos:
+                neighbors.append(n)
 
+                ################################## Pygame Stuff ###############################
+                if n != end:
+                    w.draw_rec(screen, n, pygame.Color(175, 175, 175))
+                else:
+                    w.draw_rec(screen, n, pygame.Color(0, 175, 0))
+                ###############################################################################
+
+        pygame.time.delay(200)
+    
 pygame.time.delay(5000)                                 #Delay after completion

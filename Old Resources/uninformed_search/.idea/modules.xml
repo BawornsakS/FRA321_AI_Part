@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/../FRA311_ML/.idea/FRA311_ML.iml" filepath="$PROJECT_DIR$/../FRA311_ML/.idea/FRA311_ML.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/FRA_311.iml" filepath="$PROJECT_DIR$/.idea/FRA_311.iml" />
-    </modules>
-  </component>
-</project>
