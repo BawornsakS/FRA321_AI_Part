@@ -2,7 +2,7 @@
 
 Hello, AI Engineers!
 
-In this github you will find resources to jump start your AI journey. We will cover one of the topics in AI - Searching Algorithms. Searching algorithms are used to search through a state space to find a path to the goal. You can utilize these searching algorithms to do many things such as pathplanning or even basic Game AI.
+In this github you will find resources to jump start your AI journey. We will cover one of the topics in AI - Searching Algorithms. Searching algorithms are used to search through a state space to find a path to the goal. You can utilize these searching algorithms to do many things such as path planning or even basic Game AI.
 
 There are many parts in this github.
 1. My Contact and Office Hour
@@ -13,7 +13,7 @@ There are many parts in this github.
 
 ## My Contact and Office Hour
 
-You can contact me via my facebook: Bawornsak Sakulkueakul, or shoot me an email at Bawornsak.S@gmail.com.
+You can contact me via my facebook: Bawornsak Sakulkueakulsuk, or shoot me an email at Bawornsak.S@gmail.com.
 I will hold office hours every Monday at 11.00 - 12.00 and 13.30 - 14.30 in FIBO Gaming Discord. I think this is the easiest way to hop in and ask questions. No link required whatsoever. But, if you find it too informal or want to set up a zoom meeting, please direct message me. 
 
 ## Lectures
