@@ -21,7 +21,7 @@ I will hold office hours every Monday at 11.00 - 12.00 and 13.30 - 14.30 in FIBO
 You can find all lectures at https://www.youtube.com/playlist?list=PLpJFWWZXdN_rqxl-tVdyeIqf8x9q6tQxF
 
 Topics included:
-1. Introduction to AI (not uploaded yet)
+1. Introduction to AI (13.10 - end of the clip)
 2. Problem Solving - Data Structure
 3. Problem Solving - Searching Algorithms
 4. Uninformed Search - Breadth-first Search
@@ -54,4 +54,6 @@ Basically, you just need to modify Sim.py for algorithms you want to implement. 
 
 ## Submission and Oral Test
 
-To be determined.
+You do not need to submit anything. However, your oral exam session will be recorded. The exam will test your understanding of the concepts of all searching algorithm. It will involve solving problems live during the exam. I will also ask you to demonstrate your understanding of your code. 
+
+You can book your oral exam session at https://docs.google.com/spreadsheets/d/1XjZKLiOu4zZsCMahrGGWKP4Z8DjysFY_Z7CpHUfc3EI/edit?usp=sharing. You need to login via @mail.kmutt.ac.th. New time slots will be update weekly by Sunday 11.59 pm. Slots are reserved for new students first. Students who have tested can book the slot only if the slot is still free 24 hours before the session. Screen prining is suggested to resolve conflicts if it may occur.
