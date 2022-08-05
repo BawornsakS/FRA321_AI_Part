@@ -14,7 +14,7 @@ There are many parts in this github.
 ## My Contact and Office Hour
 
 You can contact me via my facebook: Bawornsak Sakulkueakulsuk, or shoot me an email at Bawornsak.S@gmail.com.
-I will hold office hours every Monday at 11.00 - 12.00 and 13.30 - 14.30 in FIBO Gaming Discord. I think this is the easiest way to hop in and ask questions. No link required whatsoever. But, if you find it too informal or want to set up a zoom meeting, please direct message me. 
+I will hold a class once a month, and go through all the materials. So you can choose when to attend the class. If you choose not to attend a live session, you can find all the lectures in the link below. I will hold office hours upon requested.  
 
 ## Lectures
 
@@ -29,9 +29,9 @@ Topics included:
 6. Uninformed Search - Depth-first Search
 7. Heuristic Search - Greedy Best-first Search
 8. Heuristic Search - A* Search
-9. Other Algorithms - Searching with No Observation (not uploaded yet)
-10. Other Algorithms - Searching with Partial Observation (not uploaded yet)
-11. Other Algorithms - Genetic Algorithms (not uploaded yet)
+9. Other Algorithms - Searching with No Observation (only on-site)
+10. Other Algorithms - Searching with Partial Observation (only on-site)
+11. Other Algorithms - Genetic Algorithms (only on-site)
 12. Other Algorithms - Game AI
 
 
@@ -52,8 +52,6 @@ For coding homework, you will modify the codes provided in Uninformed Search fol
 Basically, you just need to modify Sim.py for algorithms you want to implement. But feel free to modify other parts also.
 
 
-## Submission and Oral Test
+## Submission and Exam
 
-You do not need to submit anything. However, your oral exam session will be recorded. The exam will test your understanding of the concepts of all searching algorithm. It will involve solving problems live during the exam. I will also ask you to demonstrate your understanding of your code. 
-
-You can book your oral exam session at https://docs.google.com/spreadsheets/d/1XjZKLiOu4zZsCMahrGGWKP4Z8DjysFY_Z7CpHUfc3EI/edit?usp=sharing. You need to login via @mail.kmutt.ac.th. New time slots will be update weekly by Sunday 11.59 pm. Slots are reserved for new students first. Students who have tested can book the slot only if the slot is still free 24 hours before the session. Screen prining is suggested to resolve conflicts if it may occur.
+You do not need to submit anything. However, you need to demonstrate your knowledge in the exam, which will be held once a month at the end of each month. You can take the exam multiple times. Only the highest scores will be counted. More info to come . . . 
